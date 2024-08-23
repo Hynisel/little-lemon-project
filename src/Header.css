@@ -1,0 +1,37 @@
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+  }
+
+  .logo {
+    width: 200px;  /* Adjust the width of the logo image */
+    height: auto;  /* Maintain aspect ratio */
+  }
+
+  /* Style for navigation menu */
+  nav {
+    /* Optional: Add some margin or padding to space out the nav from the logo */
+  }
+
+  nav ul {
+    list-style: none;    /* Remove default bullet points */
+    padding: 0;         /* Remove default padding */
+    margin: 0;          /* Remove default margin */
+    display: flex;      /* Flexbox layout for the ul */
+    gap: 15px;          /* Space between items */
+  }
+
+  nav ul li {
+    /* No margin needed for horizontal layout unless specific spacing is desired */
+  }
+
+  nav ul li a {
+    text-decoration: none; /* Remove underline from links */
+    color: #333;           /* Text color */
+    font-weight: bold;     /* Make text bold */
+    display: block;        /* Make links block-level to apply padding/margin */
+    padding: 10px 15px;    /* Add padding to make clickable area larger */
+  }
