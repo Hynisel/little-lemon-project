@@ -1,0 +1,64 @@
+/* src/components/About.css */
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background-color: #f9f9f9;
+  }
+  
+  .text-section {
+    flex: 1;
+    max-width: 500px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .text-section p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+  
+  .image-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    max-width: 500px;
+  }
+  
+  .image-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+  
+  .owner-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    position: absolute;
+    padding-bottom: 200px;
+  }
+  
+  .image-1 {
+    z-index: 1; /* Place image 1 behind image 2 */
+    top: -150px; /* Adjust vertical overlap */
+  }
+  
+  .image-2 {
+    z-index: 2; /* Place image 2 in front of image 1 */
+    top: -180px; /* Adjust vertical overlap */
+    left: -350px; /* Adjust horizontal overlap */
+  }
+  
+  #tittle_t{
+font-weight: bolder;
+font-size: 50px;
+  }
+
+  #tittle_l{
+    font-weight: bolder;
+    font-size: 30px;
+  }

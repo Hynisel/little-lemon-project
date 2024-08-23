@@ -1,6 +1,6 @@
 import React from 'react';
 import './Header.css'; // Ensure this CSS file exists in the components folder
-import Logo from './Logo_3.png'; // Updated path to match a common project structure
+import Logo from './Assets/Logo_3.png'; // Updated path to match a common project structure
 
 const Header = () => {
   return (

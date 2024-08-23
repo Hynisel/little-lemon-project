@@ -1,0 +1,43 @@
+/* src/components/Testimonials.css */
+
+.testimonials-container {
+    padding: 2rem;
+    background-color: #495E57;
+  }
+  
+  .testimonials-heading {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .testimonials-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns */
+    grid-gap: 2rem; /* Space between frames */
+  }
+  
+  .testimonial-frame {
+    border: 2px solid #000000; /* Frame around each testimonial */
+    border-radius: 8px;
+    padding: 1.5rem;
+    background-color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center; /* Center all text inside the frame */
+    background-color: #495E57;
+  }
+  
+  .testimonial-frame p {
+    margin: 0.5rem 0; /* Space between lines of text */
+    font-size: 1rem;
+  }
+
+.name_p{
+    font-weight: bolder;
+}
+
+.rating_p{
+    font-weight: bolder;
+}

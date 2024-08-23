@@ -1,3 +1,66 @@
-#test{
+/* src/components/Footer.css */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-left {
+    flex: 1;
+  }
+  
+  .footer-logo {
+    width: 150px; /* Adjust size as needed */
+    height: auto;
+  }
+  
+  .footer-right {
+    flex: 3;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer-column {
+    flex: 1;
+  }
+  
+  .footer-column h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-column ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-column ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-column ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  #test {
     font-family: 'Courier New', Courier, monospace;
-}
+  }
+  

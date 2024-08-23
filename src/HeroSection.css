@@ -1,0 +1,60 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: #495E57;
+  }
+  
+  .text-content {
+    flex: 1;
+    max-width: 500px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+  }
+  
+  .text-content p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+  
+  button {
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #f4ce14;
+    color: #000000;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #f4cf14a2;
+  }
+  
+  .image-container {
+    flex: 1;
+    max-width: 500px;
+  }
+  
+  .image-container img {
+    width: 80%;
+    height: auto;
+    border-radius: 8px;
+    padding-left: 2rem; /* Add padding to the left */
+  }
+
+ 
+#r_name{
+    color: #f4ce14;
+    font-weight: 800;
+    font-size:xx-large;
+}
+#r_location{
+    color: white;
+    font-weight: 800;
+    font-size:large;
+}
+
+#description{
+    color: white;  
+}
