@@ -1,3 +1,4 @@
+// src/App.js
 import React from 'react';
 import './App.css';
 import Header from './Header';
@@ -11,16 +12,21 @@ function App() {
   return (
     <div>
       <Header />
-      <MyHeroSection />
-      <Highlights />
-      <Testimonials />
-      <About />
+      <section id="home">
+        <MyHeroSection />
+      </section>
+      <section id="highlights">
+        <Highlights />
+      </section>
+      <section id="testimonials">
+        <Testimonials />
+      </section>
+      <section id="about">
+        <About />
+      </section>
       <Footer />
     </div>
   );
 }
 
 export default App;
-
-
-// <Main /> {/* Placed Main between Header and Footer */} 
