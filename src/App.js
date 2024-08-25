@@ -1,4 +1,5 @@
 // src/App.js
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import React from 'react';
 import './App.css';
 import Header from './Header';
@@ -7,26 +8,27 @@ import Testimonials from './Testimonials';
 import MyHeroSection from './HeroSection';
 import Highlights from './Highlights';
 import About from './About';
+import BookingPage from './BookingPage.js';
 
-function App() {
+const App = () => {
   return (
-    <div>
+    <Router>
       <Header />
-      <section id="home">
-        <MyHeroSection />
-      </section>
-      <section id="highlights">
-        <Highlights />
-      </section>
-      <section id="testimonials">
-        <Testimonials />
-      </section>
-      <section id="about">
-        <About />
-      </section>
+      <Routes>
+        <Route path="/" element={
+          <>
+            <MyHeroSection />
+            <Highlights />
+            <Testimonials />
+            <About />
+          </>
+        } />
+        <Route path="/booking" element={<BookingPage />} />
+        {/* Define other routes here */}
+      </Routes>
       <Footer />
-    </div>
+    </Router>
   );
-}
+};
 
 export default App;

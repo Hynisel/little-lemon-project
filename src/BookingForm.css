@@ -1,0 +1,54 @@
+.booking-form {
+    display: grid;
+    max-width: 300px;
+    gap: 20px;
+    padding: 1rem;
+    background-color: #ffffff; /* White background for the form */
+    border: 1px solid #ddd; /* Light border around the form */
+    border-radius: 8px; /* Rounded corners */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.booking-form label {
+    font-size: 1rem;
+    color: #333;
+}
+
+.booking-form input,
+.booking-form select {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.booking-form input[type="submit"] {
+    background-color: #495E57;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 0.75rem;
+}
+
+.booking-form input[type="submit"]:hover {
+    background-color: #30423c;
+}
+
+.confirmation-message {
+    text-align: center;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.confirmation-message h2 {
+    color: #495E57;
+}
+
+.confirmation-message p {
+    color: #333;
+}
