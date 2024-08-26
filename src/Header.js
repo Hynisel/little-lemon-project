@@ -1,4 +1,3 @@
-// src/Header.js
 import React from 'react';
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import './Header.css'; // Ensure this CSS file exists in the components folder
@@ -8,7 +7,10 @@ const Header = () => {
   return (
     <header>
       <div className="header-container">
-        <img src={Logo} alt="Little Lemon Logo" className="logo" />
+        {/* Wrap the logo in a Link component to navigate to the home page */}
+        <Link to="/" className="logo-link">
+          <img src={Logo} alt="Little Lemon Logo" className="logo" />
+        </Link>
         <nav>
           <ul>
             <li>
