@@ -1,8 +1,19 @@
+/* src/BookingPage.css */
+
+.booking-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Ensure the container takes up the full viewport height */
+    padding: 2rem;
+    background-color: #f0f0f0; /* Light background for the booking page */
+}
+
 .booking-form {
     display: grid;
     max-width: 300px;
     gap: 20px;
-    padding: 1rem;
     background-color: #ffffff; /* White background for the form */
     border: 1px solid #ddd; /* Light border around the form */
     border-radius: 8px; /* Rounded corners */
@@ -52,3 +63,9 @@
 .confirmation-message p {
     color: #333;
 }
+#book_again_b {
+    color: #ffffff;
+    background-color: #30423c;
+    
+  }
+  

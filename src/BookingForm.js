@@ -1,22 +1,37 @@
+// src/BookingForm.js
 import React, { useState } from 'react';
 import './BookingForm.css'; // Import the CSS for styling
 
-const BookingForm = ({ availableTimes, dispatch }) => {
+const BookingForm = ({ availableTimes, onDateChange, onSubmit }) => {
   const [date, setDate] = useState('');
   const [time, setTime] = useState('');
   const [guests, setGuests] = useState(1);
   const [occasion, setOccasion] = useState('');
   const [submitted, setSubmitted] = useState(false);
 
+  // Handle date change
   const handleDateChange = (e) => {
     const selectedDate = e.target.value;
     setDate(selectedDate);
-    dispatch({ type: 'updateTimes', date: selectedDate });
+    setTime(''); // Reset time selection
+    onDateChange(selectedDate);
   };
 
-  const handleSubmit = (event) => {
+  // Handle form submission
+  const handleSubmit = async (event) => {
     event.preventDefault();
+    const formData = { date, time, guests, occasion };
+    await onSubmit(formData);
     setSubmitted(true);
+  };
+
+  // Handle form reset
+  const handleFormReset = () => {
+    setDate('');
+    setTime('');
+    setGuests(1);
+    setOccasion('');
+    setSubmitted(false);
   };
 
   return (
@@ -29,7 +44,6 @@ const BookingForm = ({ availableTimes, dispatch }) => {
             id="res-date" 
             value={date}
             onChange={handleDateChange}
-            aria-required="true" // Indicate that this field is required
             required 
           />
           
@@ -38,7 +52,6 @@ const BookingForm = ({ availableTimes, dispatch }) => {
             id="res-time" 
             value={time}
             onChange={(e) => setTime(e.target.value)}
-            aria-required="true" // Indicate that this field is required
             required
           >
             <option value="">Select a time</option> {/* Default option */}
@@ -58,7 +71,6 @@ const BookingForm = ({ availableTimes, dispatch }) => {
             max="10" 
             value={guests}
             onChange={(e) => setGuests(e.target.value)}
-            aria-required="true" // Indicate that this field is required
             required 
           />
 
@@ -67,7 +79,6 @@ const BookingForm = ({ availableTimes, dispatch }) => {
             id="occasion" 
             value={occasion}
             onChange={(e) => setOccasion(e.target.value)}
-            aria-required="true" // Indicate that this field is required
             required
           >
             <option value="">Select an occasion</option> {/* Default option */}
@@ -85,6 +96,7 @@ const BookingForm = ({ availableTimes, dispatch }) => {
         <div className="confirmation-message">
           <h2>Thank you for your reservation!</h2>
           <p>Your booking has been confirmed.</p>
+          <button id='book_again_b' onClick={handleFormReset}>Book Another Reservation</button>
         </div>
       )}
     </div>
