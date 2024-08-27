@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import BookingForm from './BookingForm';
-import './BookingPage.css'; // Import the CSS file
+import './BookingPage.css';
 
 const BookingPage = () => {
   const [availableTimes, setAvailableTimes] = useState([]);
@@ -12,7 +12,7 @@ const BookingPage = () => {
       fetchAvailableTimes(new Date(selectedDate));
     } else {
       const today = new Date();
-      setSelectedDate(today.toISOString().split('T')[0]); // Set default date in yyyy-mm-dd format
+      setSelectedDate(today.toISOString().split('T')[0]);
       fetchAvailableTimes(today);
     }
   }, [selectedDate]);
@@ -59,7 +59,7 @@ const BookingPage = () => {
         availableTimes={availableTimes} 
         onDateChange={handleDateChange}
         onSubmit={handleSubmit}
-        selectedDate={selectedDate} // Pass the selected date to BookingForm if needed
+        selectedDate={selectedDate}
       />
       {submissionResult && <p className="submission-result">{submissionResult}</p>}
     </div>

@@ -1,72 +1,61 @@
-/* Main.css */
-
-/* Container for the Main component */
 .main-container {
-    max-width: 600px;
-    margin: 0 auto; /* Center the container horizontally */
-    padding: 20px;
-    background-color: #f8f8f8; /* Light background color for the form */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  }
-  
-  /* General styling for labels */
-  label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: bold;
-    color: #333;
-  }
-  
-  /* Styling for input fields and select dropdowns */
-  input[type="date"],
-  input[type="number"],
-  select {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box; /* Ensure padding doesn't affect width */
-    font-size: 16px;
-  }
-  
-  /* Styling for the submit button */
-  input[type="submit"] {
-    width: 100%;
-    padding: 12px;
-    background-color: #4CAF50;
-    color: white;
-    font-size: 16px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  /* Hover effect for the submit button */
-  input[type="submit"]:hover {
-    background-color: #45a049;
-  }
-  
-  /* Confirmation message styling */
-  .confirmation-message {
-    text-align: center;
-    padding: 20px;
-    background-color: #e7ffe7; /* Light green background */
-    border-radius: 8px;
-    border: 1px solid #b2ffb2;
-  }
-  
-  /* Styling for the confirmation message heading */
-  .confirmation-message h2 {
-    color: #2d7a2d;
-    margin-bottom: 10px;
-  }
-  
-  /* Styling for the confirmation message text */
-  .confirmation-message p {
-    color: #4a934a;
-    font-size: 16px;
-  }
-  
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+input[type="date"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.confirmation-message {
+  text-align: center;
+  padding: 20px;
+  background-color: #e7ffe7;
+  border-radius: 8px;
+  border: 1px solid #b2ffb2;
+}
+
+.confirmation-message h2 {
+  color: #2d7a2d;
+  margin-bottom: 10px;
+}
+
+.confirmation-message p {
+  color: #4a934a;
+  font-size: 16px;
+}

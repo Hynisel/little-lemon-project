@@ -1,6 +1,6 @@
 import React from 'react';
-import './HeroSection.css'; // Import the CSS file for styling
-import HeroImg from './Assets/Hero_img.png'; // Path to image from the components folder
+import './HeroSection.css';
+import HeroImg from './Assets/Hero_img.png';
 
 const myHeroSection = () => {
   return (

@@ -1,13 +1,12 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // Import Link from react-router-dom
-import './Header.css'; // Ensure this CSS file exists in the components folder
-import Logo from './Assets/Logo_3.png'; // Updated path to match a common project structure
+import { Link } from 'react-router-dom';
+import './Header.css';
+import Logo from './Assets/Logo_3.png';
 
 const Header = () => {
   return (
     <header>
       <div className="header-container">
-        {/* Wrap the logo in a Link component to navigate to the home page */}
         <Link to="/" className="logo-link">
           <img src={Logo} alt="Little Lemon Logo" className="logo" />
         </Link>

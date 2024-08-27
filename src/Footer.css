@@ -1,10 +1,8 @@
-/* src/components/Footer.css */
-
 footer {
     background-color: #333;
     color: #fff;
     padding: 1rem 2rem;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Karla, sans-serif;
   }
   
   .footer-container {
@@ -18,7 +16,7 @@ footer {
   }
   
   .footer-logo {
-    width: 150px; /* Adjust size as needed */
+    width: 150px;
     height: auto;
   }
   

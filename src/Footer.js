@@ -1,7 +1,6 @@
-// src/components/Footer.js
 import React from 'react';
-import './Footer.css'; // Import the CSS file for styling
-import logoImage from './Assets/Logo_5.png'; // Path to your footer image
+import './Footer.css';
+import logoImage from './Assets/Logo_5.png';
 
 const Footer = () => {
   return (

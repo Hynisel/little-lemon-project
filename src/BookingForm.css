@@ -1,23 +1,21 @@
-/* src/BookingPage.css */
-
 .booking-page {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100vh; /* Ensure the container takes up the full viewport height */
+    min-height: 100vh;
     padding: 2rem;
-    background-color: #f0f0f0; /* Light background for the booking page */
+    background-color: #f0f0f0;
 }
 
 .booking-form {
     display: grid;
     max-width: 300px;
     gap: 20px;
-    background-color: #ffffff; /* White background for the form */
-    border: 1px solid #ddd; /* Light border around the form */
-    border-radius: 8px; /* Rounded corners */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: Karla, sans-serif;
 }
 
 .booking-form label {
@@ -66,6 +64,4 @@
 #book_again_b {
     color: #ffffff;
     background-color: #30423c;
-    
   }
-  

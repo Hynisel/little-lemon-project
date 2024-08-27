@@ -1,6 +1,5 @@
-// src/BookingForm.js
 import React, { useState } from 'react';
-import './BookingForm.css'; // Import the CSS for styling
+import './BookingForm.css';
 
 const BookingForm = ({ availableTimes, onDateChange, onSubmit }) => {
   const [date, setDate] = useState('');
@@ -9,24 +8,22 @@ const BookingForm = ({ availableTimes, onDateChange, onSubmit }) => {
   const [occasion, setOccasion] = useState('');
   const [submitted, setSubmitted] = useState(false);
 
-  // Handle date change
+
   const handleDateChange = (e) => {
     const selectedDate = e.target.value;
     setDate(selectedDate);
-    setTime(''); // Reset time selection
+    setTime('');
     onDateChange(selectedDate);
   };
 
-  // Handle form submission
-  const handleSubmit = async (event) => {
+const handleSubmit = async (event) => {
     event.preventDefault();
     const formData = { date, time, guests, occasion };
     await onSubmit(formData);
     setSubmitted(true);
   };
 
-  // Handle form reset
-  const handleFormReset = () => {
+const handleFormReset = () => {
     setDate('');
     setTime('');
     setGuests(1);
@@ -81,7 +78,7 @@ const BookingForm = ({ availableTimes, onDateChange, onSubmit }) => {
             onChange={(e) => setOccasion(e.target.value)}
             required
           >
-            <option value="">Select an occasion</option> {/* Default option */}
+            <option value="">Select an occasion</option>
             <option>Birthday</option>
             <option>Anniversary</option>
           </select>
@@ -89,7 +86,7 @@ const BookingForm = ({ availableTimes, onDateChange, onSubmit }) => {
           <input 
             type="submit" 
             value="Make Your Reservation" 
-            aria-label="Submit reservation form" // Label for screen readers
+            aria-label="Submit reservation form"
           />
         </form>
       ) : (

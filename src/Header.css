@@ -1,53 +1,47 @@
-/* Existing styles */
 .header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
   background-color: #f8f8f8;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: Karla, sans-serif;
 }
 
 .logo {
-  width: 200px;  /* Adjust the width of the logo image */
-  height: auto;  /* Maintain aspect ratio */
-  transition: transform 0.3s ease; /* Smooth transformation for scaling */
+  width: 200px;
+  height: auto;
+  transition: transform 0.3s ease;
 }
 
-/* Hover effect for the logo */
 .logo-link:hover .logo {
-  transform: scale(1.1); /* Scale up the logo slightly */
+  transform: scale(1.1);
 }
 
-/* Style for navigation menu */
 nav {
-  /* Optional: Add some margin or padding to space out the nav from the logo */
 }
 
 nav ul {
-  list-style: none;    /* Remove default bullet points */
-  padding: 0;         /* Remove default padding */
-  margin: 0;          /* Remove default margin */
-  display: flex;      /* Flexbox layout for the ul */
-  gap: 15px;          /* Space between items */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 15px;
 }
 
 nav ul li {
-  /* No margin needed for horizontal layout unless specific spacing is desired */
 }
 
 nav ul li a {
-  text-decoration: none; /* Remove underline from links */
-  color: #333;           /* Text color */
-  font-weight: bold;     /* Make text bold */
-  display: block;        /* Make links block-level to apply padding/margin */
-  padding: 10px 15px;    /* Add padding to make clickable area larger */
-  transition: color 0.3s ease; /* Smooth transition for color change */
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  display: block;
+  padding: 10px 15px;
+  transition: color 0.3s ease;
 }
 
-/* Hover effect for navigation links */
 nav ul li a:hover {
-  color: #495E57; /* Change hover color */
-  background-color: #e0e0e0; /* Optional: Add background color on hover */
-  border-radius: 4px; /* Optional: Add rounded corners to hover background */
+  color: #495E57;
+  background-color: #e0e0e0;
+  border-radius: 4px;
 }

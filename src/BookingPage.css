@@ -1,40 +1,38 @@
-/* src/BookingPage.css */
-
 .booking-page {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 60vh; /* Ensure the container takes up the full viewport height */
+    min-height: 60vh;
     padding: 2rem;
-    background-color: #f0f0f0; /* Light background for the booking page */
+    background-color: #f0f0f0;
 }
 
-/* Adjust the margin of the header */
+
 .booking-page h1 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Karla, sans-serif;
     font-size: 2rem;
     color: #333;
-    margin-bottom: 1rem; /* Reduced margin-bottom */
-    text-align: center; /* Ensure text alignment is centered */
-    width: 100%; /* Ensure it takes up the full width for centering */
+    margin-bottom: 1rem;
+    text-align: center;
+    width: 100%;
 }
 
-/* Ensure the booking form itself is centered within the container */
+
 .booking-form {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    max-width: 600px; /* Adjust width as needed */
+    max-width: 600px;
     padding: 1rem;
-    background-color: #fff; /* White background for the form */
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Optional: add shadow for better visibility */
-    border-radius: 8px; /* Optional: add rounded corners */
-    margin-bottom: 1rem; /* Optional: add margin-bottom if needed */
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    margin-bottom: 1rem;
 }
 
-/* Add padding to the container if needed to ensure spacing from the footer */
+
 .booking-page {
-    padding: 1rem; /* Adjust padding as needed */
+    padding: 1rem;
 }

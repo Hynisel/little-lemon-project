@@ -1,8 +1,8 @@
-// src/components/About.js
+
 import React from 'react';
 import './About.css';
-import ownerImage1 from './Assets/owner1.jpg'; // Update path as needed
-import ownerImage2 from './Assets/owner2.jpg'; // Update path as needed
+import ownerImage1 from './Assets/owner1.jpg';
+import ownerImage2 from './Assets/owner2.jpg';
 
 const About = () => {
   return (
