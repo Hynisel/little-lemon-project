@@ -11,7 +11,7 @@ import BookingPage from './BookingPage.js';
 
 const App = () => {
   return (
-    <Router>
+    <Router basename="/little-lemon-project">
       <Header />
       <Routes>
         <Route path="/" element={
