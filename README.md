@@ -2,7 +2,7 @@
 
 ## Description
 
-This project is a simple web application for the Little Lemon restaurant. It allows users to book a table by selecting a date, time, and number of guests. The app is built using React and provides a clean, easy-to-use interface for making reservations.
+This project is a simple web application for the Little Lemon restaurant(fictional). It allows users to book a table by selecting a date, time, and number of guests. The app is built using React and provides a clean, easy-to-use interface for making reservations.
 
 ## Getting Started
 
