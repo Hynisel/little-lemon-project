@@ -19,10 +19,10 @@ const App = () => {
             <MyHeroSection />
             <Highlights />
             <Testimonials />
-            <About />
           </>
         } />
         <Route path="/booking" element={<BookingPage />} />
+        <Route path="/about" element={<About />} />
       </Routes>
       <Footer />
     </Router>

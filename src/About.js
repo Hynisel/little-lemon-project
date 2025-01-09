@@ -17,8 +17,8 @@ const About = () => {
       </div>
       <div className="image-section">
         <div className="image-container">
-          <img src={ownerImage1} alt="Owner 1" className="owner-image image-1" />
-          <img src={ownerImage2} alt="Owner 2" className="owner-image image-2" />
+          <img src={ownerImage1} alt="Owner_1" className="owner-image image-1" />
+          <img src={ownerImage2} alt="Owner_2" className="owner-image image-2" />
         </div>
       </div>
     </div>

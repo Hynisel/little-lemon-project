@@ -1,61 +1,84 @@
 footer {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem 2rem;
-    font-family: Karla, sans-serif;
-  }
-  
-  .footer-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .footer-left {
-    flex: 1;
-  }
-  
-  .footer-logo {
-    width: 150px;
-    height: auto;
-  }
-  
-  .footer-right {
-    flex: 3;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .footer-column {
-    flex: 1;
-  }
-  
-  .footer-column h4 {
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
-  }
-  
-  .footer-column ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .footer-column ul li {
-    margin-bottom: 0.5rem;
-  }
-  
-  .footer-column ul li a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  .footer-column ul li a:hover {
-    text-decoration: underline;
-  }
-  
-  .footer-bottom {
-    text-align: center;
-    margin-top: 1rem;
-  }
-  
+  background-color: #333;
+  color: #fff;
+  padding: 1rem 2rem;
+  font-family: Karla, sans-serif;
+}
 
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Align items to the top */
+}
+
+.footer-left {
+  flex: 1;
+}
+
+.footer-logo {
+  width: 150px;
+  height: auto;
+}
+
+.footer-right {
+  flex: 3;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Wrap columns if the screen is too small */
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px; /* Ensure columns are not too narrow */
+}
+
+.footer-column h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-column ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.list_footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+
+.list_footer ul li {
+  margin-bottom: 0.25rem;
+}
+
+.list_footer ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: normal;
+  padding: 0.1rem 0;
+}
+
+.list_footer ul li a:hover {
+  text-decoration: underline;
+}

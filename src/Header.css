@@ -17,8 +17,7 @@
   transform: scale(1.1);
 }
 
-nav {
-}
+/* nav { } */
 
 nav ul {
   list-style: none;
@@ -28,8 +27,7 @@ nav ul {
   gap: 15px;
 }
 
-nav ul li {
-}
+/* nav ul li { } */
 
 nav ul li a {
   text-decoration: none;
