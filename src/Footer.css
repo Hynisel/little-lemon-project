@@ -1,14 +1,35 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+
+.main-content {
+  flex-grow: 1;
+}
+
+
 footer {
   background-color: #333;
   color: #fff;
   padding: 1rem 2rem;
   font-family: Karla, sans-serif;
+  margin-top: auto;
+  flex-shrink: 0;
 }
+
 
 .footer-container {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start; /* Align items to the top */
+  align-items: flex-start;
 }
 
 .footer-left {
@@ -24,12 +45,12 @@ footer {
   flex: 3;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap; /* Wrap columns if the screen is too small */
+  flex-wrap: wrap;
 }
 
 .footer-column {
   flex: 1;
-  min-width: 200px; /* Ensure columns are not too narrow */
+  min-width: 200px;
 }
 
 .footer-column h4 {
@@ -44,12 +65,14 @@ footer {
 }
 
 .footer-column ul li {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
 }
 
 .footer-column ul li a {
   color: #fff;
   text-decoration: none;
+  font-weight: normal;
+  padding: 0.1rem 0;
 }
 
 .footer-column ul li a:hover {
