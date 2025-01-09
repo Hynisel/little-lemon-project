@@ -27,9 +27,6 @@ const Footer = () => {
                        <li>
                          <Link to="/booking">Reservations</Link>
                        </li>
-                       <li>
-                         <Link to="#login">Login</Link>
-                       </li>
                      </ul>
                    </nav>
           </div>
