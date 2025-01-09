@@ -25,9 +25,6 @@ const Header = () => {
               <Link to="/booking">Reservations</Link>
             </li>
             <li>
-              <Link to="#order-online">Order Online</Link>
-            </li>
-            <li>
               <Link to="#login">Login</Link>
             </li>
           </ul>
