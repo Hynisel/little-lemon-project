@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/little-lemon-project/static/css/main.d8617de9.css",
-    "main.js": "/little-lemon-project/static/js/main.eab62616.js",
+    "main.css": "/little-lemon-project/static/css/main.1c5bb834.css",
+    "main.js": "/little-lemon-project/static/js/main.e84f630b.js",
     "static/js/453.f0e5cfda.chunk.js": "/little-lemon-project/static/js/453.f0e5cfda.chunk.js",
     "static/media/Salad.png": "/little-lemon-project/static/media/Salad.b3b48bb82fcaced0c858.png",
     "static/media/Bruschetta.png": "/little-lemon-project/static/media/Bruschetta.cc98b69b023d1447eeba.png",
+    "static/media/Pizza_margherita.jpg": "/little-lemon-project/static/media/Pizza_margherita.699957abb52e9d883510.jpg",
     "static/media/owner2.jpg": "/little-lemon-project/static/media/owner2.c22bd23a08fd4359da63.jpg",
     "static/media/Hero_img.png": "/little-lemon-project/static/media/Hero_img.446568ef7b1ce44eabc6.png",
     "static/media/Logo_5.png": "/little-lemon-project/static/media/Logo_5.2c859235d6c57bb54176.png",
@@ -12,12 +13,12 @@
     "static/media/owner1.jpg": "/little-lemon-project/static/media/owner1.e49c978a1b747c43245a.jpg",
     "static/media/Lemon_Dessert.png": "/little-lemon-project/static/media/Lemon_Dessert.873ce579f123349c7ab7.png",
     "index.html": "/little-lemon-project/index.html",
-    "main.d8617de9.css.map": "/little-lemon-project/static/css/main.d8617de9.css.map",
-    "main.eab62616.js.map": "/little-lemon-project/static/js/main.eab62616.js.map",
+    "main.1c5bb834.css.map": "/little-lemon-project/static/css/main.1c5bb834.css.map",
+    "main.e84f630b.js.map": "/little-lemon-project/static/js/main.e84f630b.js.map",
     "453.f0e5cfda.chunk.js.map": "/little-lemon-project/static/js/453.f0e5cfda.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d8617de9.css",
-    "static/js/main.eab62616.js"
+    "static/css/main.1c5bb834.css",
+    "static/js/main.e84f630b.js"
   ]
 }
