@@ -8,6 +8,7 @@ import MyHeroSection from './HeroSection';
 import Highlights from './Highlights';
 import About from './About';
 import BookingPage from './BookingPage.js';
+import Menu from './Menu.js';
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
         } />
         <Route path="/booking" element={<BookingPage />} />
         <Route path="/about" element={<About />} />
+        <Route path="/Menu" element={<Menu />} />
       </Routes>
       <Footer />
     </Router>

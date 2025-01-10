@@ -3,12 +3,20 @@ import './Highlights.css';
 import salad from './Assets/Salad.png';
 import bruschetta from './Assets/Bruschetta.png';
 import lemond from './Assets/Lemon_Dessert.png';
+import { useNavigate } from 'react-router-dom';
 
 const Highlights = () => {
+
+  const navigate = useNavigate();
+
+   const handleNavigation = () => {
+    navigate('/Menu');
+   };
+
   return (
     <><div className="highlights-header">
       <p>Specials</p>
-    <button>Online Menu</button>
+    <button onClick={handleNavigation}>Online Menu</button>
     </div>
     <div className="highlights-container">
       <div className="highlight-column">
