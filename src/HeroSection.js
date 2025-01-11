@@ -5,10 +5,10 @@ import HeroImg from './Assets/Hero_img.png';
 import { useNavigate } from 'react-router-dom';
 
 const MyHeroSection = () => {
-  const navigate = useNavigate(); // Get the navigate function
+  const navigate = useNavigate();
 
   const handleNavigation = () => {
-    navigate('/booking'); // Navigate to the booking page
+    navigate('/booking');
   };
 
   return (

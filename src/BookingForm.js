@@ -81,6 +81,7 @@ const handleFormReset = () => {
             <option value="">Select an occasion</option>
             <option>Birthday</option>
             <option>Anniversary</option>
+            <option>Other</option>
           </select>
 
           <input 
