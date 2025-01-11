@@ -28,7 +28,7 @@ const Footer = () => {
               <li><p>No Adress 28</p></li>
               <li><p>Chicago, IL</p></li>
               <li><p>555-5555-555</p></li>
-              <li><p>little-lemon-enquiries@!mail.com</p></li>
+              <li><p>l-lemon@!mail.com</p></li>
             </ul>
           </div>
           <div className="footer-column">
