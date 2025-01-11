@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './BookingForm.css';
 
 const BookingForm = ({ availableTimes, onDateChange, onSubmit }) => {
@@ -8,6 +8,13 @@ const BookingForm = ({ availableTimes, onDateChange, onSubmit }) => {
   const [occasion, setOccasion] = useState('');
   const [submitted, setSubmitted] = useState(false);
 
+  useEffect(() => {
+    const dateInput = document.getElementById('res-date');
+    dateInput.addEventListener('input', disableMondays);
+    return () => {
+      dateInput.removeEventListener('input', disableMondays);
+    };
+  }, []);
 
   const handleDateChange = (e) => {
     const selectedDate = e.target.value;
@@ -16,14 +23,14 @@ const BookingForm = ({ availableTimes, onDateChange, onSubmit }) => {
     onDateChange(selectedDate);
   };
 
-const handleSubmit = async (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
     const formData = { date, time, guests, occasion };
     await onSubmit(formData);
     setSubmitted(true);
   };
 
-const handleFormReset = () => {
+  const handleFormReset = () => {
     setDate('');
     setTime('');
     setGuests(1);
@@ -31,22 +38,36 @@ const handleFormReset = () => {
     setSubmitted(false);
   };
 
+  const isMonday = (dateString) => {
+    const date = new Date(dateString);
+    return date.getUTCDay() === 1; // 1 represents Monday
+  };
+
+  const disableMondays = (e) => {
+    const selectedDate = e.target.value;
+    if (isMonday(selectedDate)) {
+      e.target.setCustomValidity('The restaurant is closed on Mondays. Please select another date.');
+    } else {
+      e.target.setCustomValidity('');
+    }
+  };
+
   return (
     <div>
       {!submitted ? (
         <form className="booking-form" onSubmit={handleSubmit}>
           <label htmlFor="res-date">Choose date</label>
-          <input 
-            type="date" 
-            id="res-date" 
+          <input
+            type="date"
+            id="res-date"
             value={date}
             onChange={handleDateChange}
-            required 
+            required
           />
           
           <label htmlFor="res-time">Choose time</label>
-          <select 
-            id="res-time" 
+          <select
+            id="res-time"
             value={time}
             onChange={(e) => setTime(e.target.value)}
             required
@@ -60,20 +81,20 @@ const handleFormReset = () => {
           </select>
 
           <label htmlFor="guests">Number of guests</label>
-          <input 
-            type="number" 
-            id="guests" 
-            placeholder="1" 
-            min="1" 
-            max="10" 
+          <input
+            type="number"
+            id="guests"
+            placeholder="1"
+            min="1"
+            max="10"
             value={guests}
             onChange={(e) => setGuests(e.target.value)}
-            required 
+            required
           />
 
           <label htmlFor="occasion">Occasion</label>
-          <select 
-            id="occasion" 
+          <select
+            id="occasion"
             value={occasion}
             onChange={(e) => setOccasion(e.target.value)}
             required
@@ -84,9 +105,9 @@ const handleFormReset = () => {
             <option>Other</option>
           </select>
 
-          <input 
-            type="submit" 
-            value="Make Your Reservation" 
+          <input
+            type="submit"
+            value="Make Your Reservation"
             aria-label="Submit reservation form"
           />
         </form>

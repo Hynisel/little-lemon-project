@@ -1,41 +1,47 @@
 .testimonials-container {
-    padding: 2rem;
-    background-color: #495E57;
-  }
-  
-  .testimonials-heading {
-    text-align: center;
-    font-weight: bolder;
-    font-size: 2rem;
-    margin-bottom: 2rem;
-    font-family: Karla, sans-serif;
-  }
-  
-  .testimonials-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 2rem;
-  }
-  
-  .testimonial-frame {
-    border: 2px solid #000000;
-    border-radius: 8px;
-    padding: 1.5rem;
-    background-color: #ffffff;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
-    background-color: #495E57;
-  }
-  
-  .testimonial-frame p {
-    margin: 0.5rem 0;
-    font-size: 1rem;
-  }
+  padding: 2rem;
+  background-color: #495E57;
+}
+
+.testimonials-heading {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-family: Karla, sans-serif;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+}
+
+.testimonial-frame {
+  border: 2px solid #000000;
+  border-radius: 8px;
+  padding: 1.5rem;
+  background-color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  background-color: #495E57;
+}
+
+.testimonial-frame p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
 
 .name_p{
-    font-weight: bolder;
+  font-weight: bolder;
 }
 
 .rating_p{
-    font-weight: bolder;
+  font-weight: bolder;
+}
+
+@media (max-width: 768px) {
+.testimonials-grid {
+  grid-template-columns: 1fr;
+}
 }

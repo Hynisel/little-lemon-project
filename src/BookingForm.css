@@ -6,9 +6,9 @@
     min-height: 100vh;
     padding: 2rem;
     background-color: #f0f0f0;
-}
-
-.booking-form {
+  }
+  
+  .booking-form {
     display: grid;
     max-width: 300px;
     gap: 20px;
@@ -16,35 +16,35 @@
     border: 1px solid #ddd;
     border-radius: 8px;
     font-family: Karla, sans-serif;
-}
-
-.booking-form label {
+  }
+  
+  .booking-form label {
     font-size: 1rem;
     color: #333;
-}
-
-.booking-form input,
-.booking-form select {
+  }
+  
+  .booking-form input,
+  .booking-form select {
     padding: 0.5rem;
     font-size: 1rem;
     border: 1px solid #ccc;
     border-radius: 4px;
-}
-
-.booking-form input[type="submit"] {
+  }
+  
+  .booking-form input[type="submit"] {
     background-color: #495E57;
     color: #fff;
     border: none;
     cursor: pointer;
     border-radius: 4px;
     padding: 0.75rem;
-}
-
-.booking-form input[type="submit"]:hover {
+  }
+  
+  .booking-form input[type="submit"]:hover {
     background-color: #30423c;
-}
-
-.confirmation-message {
+  }
+  
+  .confirmation-message {
     text-align: center;
     padding: 1rem;
     border: 1px solid #ddd;
@@ -52,16 +52,49 @@
     background-color: #f0f0f0;
     max-width: 300px;
     margin: 0 auto;
-}
-
-.confirmation-message h2 {
+  }
+  
+  .confirmation-message h2 {
     color: #495E57;
-}
-
-.confirmation-message p {
+  }
+  
+  .confirmation-message p {
     color: #333;
-}
-#book_again_b {
+  }
+  
+  #book_again_b {
     color: #ffffff;
     background-color: #30423c;
   }
+  
+
+  @media (max-width: 768px) {
+    .booking-page {
+      padding: 1rem;
+    }
+  
+    .booking-form {
+      max-width: 100%;
+      padding: 1rem;
+    }
+  
+    .booking-form label {
+      font-size: 0.9rem;
+    }
+  
+    .booking-form input,
+    .booking-form select {
+      padding: 0.5rem;
+      font-size: 0.9rem;
+    }
+  
+    .booking-form input[type="submit"] {
+      padding: 0.75rem;
+    }
+  
+    .confirmation-message {
+      max-width: 100%;
+      padding: 1rem;
+    }
+  }
+  

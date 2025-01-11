@@ -29,5 +29,3 @@ const MyHeroSection = () => {
 };
 
 export default MyHeroSection;
-
-

@@ -34,7 +34,6 @@ const Highlights = () => {
         <p className='dish_name'>Lemon Cake</p>
         <p id="lemon_text">Lemon Cake is a light and zesty dessert with a tender crumb,infused with fresh lemon zest and juice. Often finished with a tangy lemon glaze or frosting, this cake offers a refreshing citrus flavor that's both sweet and tart, making it an ideal treat for any occasion.</p>
       </div>
-      
     </div></>
   );
 };

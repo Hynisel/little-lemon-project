@@ -3,6 +3,7 @@
   justify-content: space-between;
   padding: 2rem;
   background-color: #f9f9f9;
+  flex-wrap: nowrap; /* Default for desktop */
 }
 
 .highlight-column {
@@ -54,6 +55,7 @@
   margin-bottom: 1rem;
   padding-right: 50px;
   padding-left: 50px;
+  flex-direction: row;
 }
 
 .dish_name {
@@ -74,3 +76,36 @@
 #brus_b {
   margin-bottom: 10px;
 }
+
+
+@media (max-width: 768px) {
+  .highlights-container {
+    flex-wrap: wrap;
+  }
+
+  .highlight-column {
+    flex: 1 1 calc(50% - 2rem);
+    margin: 1rem;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .highlight-column img {
+    width: 80%;
+  }
+
+  .highlights-header {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  .dish_name {
+    text-align: center;
+  }
+
+  #lemon_text, #Lemon_d, #brus_b {
+    margin: 20px 0;
+  }
+}
+
