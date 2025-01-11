@@ -8,8 +8,8 @@
 }
 
 .text-content {
-  flex: 2; /* Adjusted flex value */
-  max-width: 800px; /* Adjusted max-width */
+  flex: 2;
+  max-width: 800px;
   font-family: Karla, sans-serif;
   font-size: 10px;
 }
