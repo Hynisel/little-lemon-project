@@ -10,25 +10,25 @@ const Menu = () => {
     {
         name: 'Greek Salad',
         description: "A classic Mediterranean dish, Greek Salad is a refreshing mix of crisp cucumbers, juicy tomatoes, red onions, and Kalamata olives, all topped with crumbly feta cheese. It's typically dressed with olive oil, a dash of red wine vinegar, and sprinkled with oregano, making it a vibrant and healthy choice that captures the essence of Greek cuisine.",
-        price: '€10.00',
+        price: '$10.00',
         image: salad,
       },
       {
         name: 'Bruschetta',
         description: 'Bruschetta is a popular Italian appetizer featuring slices of grilled bread rubbed with garlic and drizzled with extra-virgin olive oil. The most traditional version is topped with fresh tomatoes, basil, and a hint of balsamic vinegar, creating a perfect balance of flavors that is both simple and delicious.',
-        price: '€8.00',
+        price: '$8.00',
         image: bruschetta,
       },
     {
       name: 'Lemon Cake',
       description: "Lemon Cake is a light and zesty dessert with a tender crumb,infused with fresh lemon zest and juice. Often finished with a tangy lemon glaze or frosting, this cake offers a refreshing citrus flavor that's both sweet and tart, making it an ideal treat for any occasion.",
-      price: '€5.50',
+      price: '$5.50',
       image: lemond,
     },
     {
       name: 'Margherita Pizza',
       description: 'Pizza topped with fresh tomatoes, mozzarella cheese, and basil.',
-      price: '€12.00',
+      price: '$12.00',
       image: margherita,
     },
   ];
